@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* html{
+    scroll-behavior: smooth;
+} */
+/* CSS Variables */
+:root{
+    --navbar-height: 79px;
+}
+#navbar{
+    display: flex;
+    padding: 30px 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-color: aliceblue;
+    background-color:#e0e0e0f8;
+}
+#navbar ul{
+ display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 2rem;
+}
+#navbar ul li a{
+    /* color: white; */
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 42px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 180px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home::before{
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    background: url('../images/puzzle.jpg');
+    height: 850px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#Home button{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 40px;
+    box-sizing: border-box;
+    background-color:#e0e0e0ef;
+}
+#Home button li{
+    list-style: none;
+}
+#Home button li a{
+    box-sizing: border-box;
+    font-size: 4rem;
+    padding: 1rem 0.5rem;
+    margin: 1rem;
+    border-radius: 23%;
+    text-decoration: none;
+}
+#Home .tictac{
+    padding: 10px 20px;
+}
+#Home .snake{
+    padding:10px 20px;
+}
+
+
+/* Abput section */
+#About{
+    /* background-color: aliceblue;
+    padding: 2rem 9%; */
+    text-align: center; 
+    font-size: 4 rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+/* background: url('../images/bg.avif'); */
+}
+#About #tictic{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+#About #tictic #tictac #images{
+    flex: 1 1 40rem;
+    position: relative;
+}
+#About #ticti #tictac #images img{
+    width: 50%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+/* #About #tictic #tictac p{
+  } padding-left: 40px;
+   padding-right: 40px; */
+
+
+#About h1{
+    font-size: 80px;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    margin: 1rem;
+}
+
+#About #tictic #tictac h2{
+    font-size: 50px;
+    padding: 0.5rem 0.5rem;
+}
+
+#About #tictic #tictac{
+    flex: 1 1 40rem;
+    /* position: relative; */
+}
+#About #tictic #tictac h1{
+    font-size: 3rem;
+    color: #333333;
+}
+#About #tictic #tictac h3{
+    font-size: 2rem;
+    color: #333333;
+}
+#About #tictic #tictac p{
+    font-size: 2rem;
+    color: #999;
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+#About{
+    /* background-color: aliceblue;
+    padding: 2rem 9%; */
+    text-align: center; 
+    font-size: 4 rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+/* background: url('../images/bg.avif'); */
+}
+#About #tictic{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+#About #snakes #snake #images{
+    flex: 1 1 40rem;
+    position: relative;
+}
+#About #snakes #snake #images img{
+    width: 50%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+#About h1{
+    font-size: 80px;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    margin: 1rem;
+}
+
+#About #snakes #snake h2{
+    font-size: 50px;
+    padding: 0.5rem 0.5rem;
+}
+
+#About #snakes #snake{
+    flex: 1 1 40rem;
+    /* position: relative; */
+}
+#About #snakes #snake h1{
+    font-size: 3rem;
+    color: #333333;
+}
+#About #snakes #snake h3{
+    font-size: 2rem;
+    color: #333333;
+}
+#About #snakes #snake p{
+    font-size: 1rem;
+    color: #999;
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+@media (max-width:450px){
+    #Home{
+        font-size: 3rem ;
+    }
+}
+
+/* #About #snake{
+    flex: 1 1 40rem; */
+    /* position: relative;
+}
+#About #snake h1{
+    font-size: 3 rem;
+    color: #333333;
+}
+#About #snake p{
+    font-size: 1rem;
+    color: #999;
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+@media (max-width:450px){
+    #home{
+        font-size: 3rem ;
+    }
+}
+
+
